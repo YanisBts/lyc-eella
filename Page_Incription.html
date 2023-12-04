@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Soirée Lycéenne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #logo_lycée {
+            width: 15%; /* Ajustez la taille de l'image selon vos besoins */
+            
+            
+        }
+        header{
+            background-color: #fff;
+            height: 15%;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 5%;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 2%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 3%;
+            width: 20%;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer{
+           width: 22%;
+           display: flex;
+           flex-direction: column;
+        }
+        li{
+            list-style-type: none;
+            margin: auto;
+        }
+        #logoRhone{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5%;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            padding-inline-start: 0%;
+            margin-bottom: 5%;
+            justify-content: center;
+        }
+
+        .imgDimension{
+            height: 30px;
+            width:90%;
+            
+        }
+
+    
+    </style>
+</head>
+<body>
+    <header>
+    <img id="logo_lycée" src="Lycée Ella Fitzgerald_files/logo_lycée.png" alt="Logo du lycée">
+    </header>
+    <form action="traitement.php" method="post">
+        <h2>Inscription Soirée Lycéenne</h2>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="classe">Classe :</label>
+        <input type="text" id="classe" name="classe" required>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+    <footer>
+        <div id="logoRhone">
+            
+                <img src="Lycée Ella Fitzgerald_files/logo_region_auvergne-rhone-alpes.png" alt="Logo Auvergne-Rhône-Alpes">   
+        </div>
+        <ul>
+            <li>
+                <img src="Lycée Ella Fitzgerald_files/logo_01_ain.png" alt="logo ain">
+            </li>
+            <li>
+                <img class="imgDimension" src="Lycée Ella Fitzgerald_files/logo_03_allier.png" alt="logo allier">
+            </li>
+            <li>
+                <img class="imgDimension" src="Lycée Ella Fitzgerald_files/logo_07_ardeche.png" alt="logo ardèche">
+            </li>
+            <li>
+                <img class="imgDimension" src="Lycée Ella Fitzgerald_files/logo_15_cantal.png" alt="logo cantal">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="Lycée Ella Fitzgerald_files/logo_38_isere.png" alt="logo isère">
+            </li>
+            <li>
+                <img class="imgDimension" src="Lycée Ella Fitzgerald_files/logo_43_haute-loire.png" alt="logo haute loire">
+            </li>
+            <li>
+                <img class="imgDimension" src="Lycée Ella Fitzgerald_files/logo_63_puy-de-dome.png" alt="logo puy de dome">
+            </li>
+            <li>
+                <img class="imgDimension" src="Lycée Ella Fitzgerald_files/logo_69_rhone.png" alt="logo rhone">
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
